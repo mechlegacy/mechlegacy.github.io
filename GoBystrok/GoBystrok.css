@@ -1,0 +1,464 @@
+/*!
+ * Go Bystrok - Restaurant v1.0.0-beta.1 (https://github.com/GoBystrok/restaurant-template)
+ * Copyright 2017-2018 Go Bystrok
+ * Licensed under MIT (https://github.com/GoBystrok/restaurant-template/blob/master/LICENSE)
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600|Roboto+Mono");
+
+@media (max-width: 575px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #5A6169;
+  background-color: #fff;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 12px;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+b, strong {
+  font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.75rem;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  color: #212529;
+}
+
+h1, .h1 {
+  font-size: 3.052rem;
+  letter-spacing: -0.0625rem;
+  line-height: 3rem;
+}
+
+h2, .h2 {
+  font-size: 2.441rem;
+  letter-spacing: -0.0625rem;
+  line-height: 2.25rem;
+}
+
+h3, .h3 {
+  font-size: 1.953rem;
+  line-height: 2.25rem;
+}
+
+h4, .h4 {
+  font-size: 1.563rem;
+  line-height: 2rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+p + h1, p + .h1,
+p + h2, p + .h2,
+p + h3, p + .h3,
+p + h4, p + .h4,
+p + h5, p + .h5,
+p + h6, p + .h6 {
+  margin-top: 2.25rem;
+}
+
+/* ==========================================
+---------------- NAVBAR ---------------------
+===========================================*/
+.logo-GoBystrok {
+	height: 50px;
+	width: 150px;
+	display: block;
+	background: url('image/LogoNav2.png') no-repeat;
+	background-size: contain;
+  color: transparent;
+  /* border: 1px solid red; */
+}
+.navbar-brand{
+  padding: 3px;
+}
+
+.navbar-GoBystrok{
+  background-color: #ffffff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+	border: none;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-GoBystrok .navbar-nav>li>a {
+    color: #072B44;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.4s, color 0.4s;
+}
+
+.navbar-GoBystrok .navbar-nav>li>a:hover{
+  color: #c11313;
+}
+
+/* ==========================================
+-------------- TOP BANNER -------------------
+===========================================*/
+.bg-GoBystrok .welcome {
+  position: relative;
+  height: 80vh;
+  min-height: 700px;
+  background: url("image/banner.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.bg-GoBystrok .welcome:before {
+  position: absolute;
+  z-index: 0;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .9;
+  background: #262727;
+}
+
+.inner-wrapper {
+  padding-top: 280px;
+  text-align: center;
+
+}
+
+.border-logo{
+  position: relative;
+  border: 1px solid white;
+  padding-top: 40px;
+}
+
+.tittle-one{
+  position: relative;
+  color: white;
+  font-size: 100px;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.subtittle-one{
+  padding: 30px;
+  position: relative;
+  color: white;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 991px) {
+  .bg-GoBystrok .welcome {
+    height: auto;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .bg-GoBystrok .welcome {
+    height: auto;
+  }
+  .bg-GoBystrok .welcome .inner-wrapper {
+    padding-top: 280px;
+    text-align: center;
+  }
+  #Contact-GoBystrok  .panel-GoBystrok{
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .bg-GoBystrok .welcome .welcome-heading {
+    font-size: 2.415rem;
+  }
+}
+/* ==========================================
+----------------- FOOTER -------------------
+===========================================*/
+#Footer-GoBystrok{
+  background-color: #432727;
+}
+
+#Footer-GoBystrok .block__title{
+  color: #b4a9a9;
+  font-family: 'Lato',sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#Footer-GoBystrok .list--footer{
+  margin-bottom:20px
+}
+
+footer .nav a {
+	color: white;
+  padding: 4px 0px;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+footer .nav a:hover {
+	color: #b4a9a9 !important;
+	background: none;
+}
+
+#Footer-GoBystrok .sub-footer-GoBystrok{
+  background-color: #3c2323;
+}
+
+#Footer-GoBystrok .sub-footer-GoBystrok>div>div>div>h4{
+  color: #b4a9a9;
+  font-family: 'Poppins',sans-serif;
+  margin: 20px 0px;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+
+/* ==========================================
+----------------- CONTACT -------------------
+===========================================*/
+#Contact-GoBystrok{
+  padding: 70px 0px;
+  background-color: #fbf9f9;
+}
+
+#Contact-GoBystrok .center-contact{
+  width: 100%;
+}
+#Contact-GoBystrok  .panel-GoBystrok{
+    display: block;
+    margin: auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+#Contact-GoBystrok .padd{
+  padding-bottom: 40px;
+}
+
+#Contact-GoBystrok label{
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+}
+
+#Contact-GoBystrok .float-right{
+  float: right;
+}
+/* ==========================================
+--------------- TESTMONIALS -----------------
+===========================================*/
+#Testmonials-GoBystrok{
+  padding: 70px 0px;
+}
+
+#Testmonials-GoBystrok .avatar-rounded{
+  border-radius: 800px;
+  box-shadow: 2px 2px 2px 2px #e9e9e9;
+  margin: 15px 0px;
+}
+
+#Testmonials-GoBystrok h5{
+  font-size: 22px;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  padding: 5px !important;
+}
+
+#Testmonials-GoBystrok span{
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+}
+#Testmonials-GoBystrok .descrp-test{
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 0px;
+}
+
+#Testmonials-GoBystrok .pad-20{
+  padding: 50px 0px;
+}
+/* ==========================================
+-------------- SOCIAL MEDIA -----------------
+===========================================*/
+#Social-GoBystrok {
+  position: relative;
+  height: 70vh;
+  min-height: 120px;
+  background: url("image/banner2.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#Social-GoBystrok:before {
+  position: absolute;
+  z-index: 0;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .9;
+  background: #262727;
+}
+
+.inner-wrapper-media {
+  padding-top: 140px;
+  text-align: center;
+}
+
+/* ==========================================
+------------------- ABOUT -------------------
+===========================================*/
+#About-GoBystrok{
+  padding: 70px 0px;
+  background-color: #fbf9f9;
+}
+
+#About-GoBystrok .word-GoBystrok{
+  font-family:  'Poppins', sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  padding: 30px 20px;
+}
+
+.sub-tittle{
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  padding-top: 8px;
+}
+
+/* ==========================================
+-------------- OUR SERVICES -----------------
+===========================================*/
+#Services-GoBystrok{
+  padding: 70px 0px;
+}
+
+#Services-GoBystrok .pan-serv{
+  padding-top: 40px;
+}
+#Services-GoBystrok .pan-serv .service-tittle{
+  padding-top: 15px;
+  font-family: 'Lato', sans-serif;
+  color: black;
+}
+
+#Services-GoBystrok .pan-serv .text-descr{
+  font-family: 'Poppins', sans-serif;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.h1-tittle{
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.p-tittle{
+  text-align: center !important;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+.bold-t{
+  font-weight: bold;
+}
+
+.t-padd{
+  padding-top: 10px;
+}
+
+.shadow-icon{
+  border-radius: 500px;
+  box-shadow: 1px 2px 2px 1px #e3e3e3;
+}
+
+.text-red{
+  color: #c11313;
+}
+
+.text-size-60{
+  font-size: 60px !important;
+}
+
+/* ==========================================
+-------------- BUTTONS LAY -------------------
+===========================================*/
+.btn-GoBystrok{
+  position: relative;
+  color: white;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+     -moz-border-radius: 500px;
+  margin: 10px 15px;
+  padding: 10px 40px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  transition: background 0.4s, color 0.4s;
+}
+
+.btn-red{
+  background-color: #c11313;
+}
+
+.btn-red:hover{
+  background-color: #a01515;
+  color: white;
+}
+
+.btn-white{
+  border: 2px solid white;
+}
+
+.btn-white:hover{
+  border: 2px solid white;
+  background-color: white;
+}
